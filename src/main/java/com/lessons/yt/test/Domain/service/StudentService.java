@@ -7,6 +7,7 @@ import com.lessons.yt.test.Domain.exception.StudentNotFoundException;
 import com.lessons.yt.test.External.repository.StudentRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 

@@ -9,11 +9,12 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/Student")
 @AllArgsConstructor
 public class StudentController {
 
@@ -22,9 +23,8 @@ public class StudentController {
     @GetMapping("/getStudent")
     public ResponseEntity<StudentGeneralDto> getStudent(@RequestParam Integer id){
         return studentService.getStudent(id);
-
-
     }
+
 
     @PostMapping("/addStudent")
     public ResponseEntity<Student> addStudent(@RequestBody CreateStudentDto createStudentDto){ //(@RequestParam String name,@RequestParam String address...)
